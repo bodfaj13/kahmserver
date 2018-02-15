@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/api', (req, res, next)=>{
   res.send({
-    msg: 'hello world'
+    msg: 'hello kahm'
   });
 })
 
