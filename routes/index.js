@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const AuthControllerPolicy = require('../policies/AuthControllerPolicy');
+const MsgControllerPolicy = require('../policies/MsgControllerPolicy');
 const UserMsgController = require('../controllers/UserMsgController');
 
 /* GET home page. */
@@ -16,6 +16,6 @@ router.get('/api', (req, res, next)=>{
 })
 
 //user contact message
-router.post('/api/usersendcontact', AuthControllerPolicy.userSendContact,UserMsgController.sendMsg);
+router.post('/api/usersendcontact', MsgControllerPolicy.userSendContact,UserMsgController.sendMsg);
 
 module.exports = router;

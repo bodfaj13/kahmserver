@@ -30,7 +30,7 @@ module.exports = {
         service: 'gmail',
         auth: {
           user: 'bellohargbola13@gmail.com',
-          pass: '@Bellohargbola13'
+          pass: 'Bellohargbola13@'
         }
       });
       var mailOptions = {
