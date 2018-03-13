@@ -29,14 +29,14 @@ module.exports = {
       var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'bellohargbola13@gmail.com',
-          pass: 'Bellohargbola13@'
+          user: 'kahmintegratedfarms@gmail.com',
+          pass: 'okeoyifarms'
         }
       });
       var mailOptions = {
-        to: 'bellohargbola13@gmail.com',
-        from: 'bellohargbola13@gmail.com',
-        subject: 'Contact Response',
+        to: 'kahmintegratedfarms@gmail.com',
+        from: 'kahmintegratedfarms@gmail.com',
+        subject: 'Contact Message Response',
         html: '<h1 style="text-transform: capitalize;">Contact Response From ' + data.fullname + '</h1><p><b>Name</b>: ' + data.fullname + '</p><p><b>Email</b>: ' + data.email + '</p><p><b>Contact</b>: ' + data.contact + '</p><p style="white-spacing: pre"><b>Message</b>: ' + data.message + '</p>'
       };
       transporter.sendMail(mailOptions, function(err, info) {
